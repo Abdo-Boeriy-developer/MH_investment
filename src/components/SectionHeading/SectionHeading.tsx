@@ -9,7 +9,11 @@ const SectionHeading = ({ subTitle, title, desc }: SectionHeadingProps) => {
   return (
     <div>
       <div className={style.container}>
-        <p className={style.subTitle}>{subTitle}</p>
+        <div className={style.subTitle}>
+          <p></p>
+          <h2>{subTitle}</h2>
+          <p></p>
+        </div>
         <h2 className={style.title}>{title}</h2>
         <p className={style.desc}> {desc}</p>
       </div>

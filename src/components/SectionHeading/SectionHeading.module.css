@@ -1,14 +1,3 @@
-:root {
-  --ofwhaite-color: #f3f3f1;
-  --white-color: #ffffff;
-  --navy-color: #111e27;
-  --deepNavy-color: #08121b;
-  --gold-color: #e1b45d;
-  --lightGold-color: #d9aa5a;
-  --dark-color: #17232d;
-  --gray-color: #6f7345;
-  --beigeGold-color: #d8c38e;
-}
 .container {
   display: flex;
   justify-content: center;
@@ -19,29 +8,22 @@
 }
 
 .subTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subTitle p {
+  width: 50px;
+  height: 2px;
+  background: var(--gold-color);
+}
+
+.subTitle h2 {
   position: relative;
   font-size: 20px;
   font-weight: 500;
   color: var(--gold-color);
-}
-
-.subTitle::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  background-color: var(--gold-color);
-  top: 50%;
-  left: -85%;
-}
-.subTitle::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  background-color: var(--gold-color);
-  top: 50%;
-  right: -85%;
 }
 
 .title {
