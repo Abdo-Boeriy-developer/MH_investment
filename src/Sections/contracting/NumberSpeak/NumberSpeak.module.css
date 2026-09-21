@@ -1,0 +1,86 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.numberSpeak {
+  margin-top: 50px;
+  padding: 30px 20px;
+  background-color: var(--deepNavy-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin: auto;
+}
+
+.content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+.content p {
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--ofwhaite-color);
+}
+
+.stateItem {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.item svg {
+  font-size: 35px;
+  color: var(--gold-color);
+}
+
+.item h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+.item p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ofwhaite-color);
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .content,
+  .stateItem {
+    width: 100%;
+  }
+}

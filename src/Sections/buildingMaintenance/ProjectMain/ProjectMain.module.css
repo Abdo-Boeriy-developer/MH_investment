@@ -1,0 +1,139 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+.ProjectMain {
+  margin-top: 50px;
+  padding: 20px 0;
+  background: var(--navy-color);
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+}
+.topText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.SubTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.SubTitle p {
+  width: 30px;
+  height: 2px;
+  background: var(--gold-color);
+}
+
+.SubTitle h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+.desc {
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--ofwhaite-color);
+}
+
+/*  */
+
+.swipers {
+  margin-top: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 360px;
+  border: 3px solid var(--dark-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.swiper .img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.swiper .img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.swiper h2 {
+  padding: 0 10px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.swiper p {
+  border: 1px solid var(--gold-color);
+  padding: 5px 15px;
+  margin-top: 5px;
+  border-radius: 20px;
+  width: max-content;
+  text-align: center;
+  color: var(--white-color);
+  margin-right: 10px;
+}
+
+/* numbers */
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  border-top: 2px solid var(--dark-color);
+  padding: 20px 0;
+}
+
+.card {
+  width: calc((100% - 30px) / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card svg {
+  font-size: 28px;
+  color: var(--gold-color);
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--white-color);
+}

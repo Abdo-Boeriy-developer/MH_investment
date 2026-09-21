@@ -1,0 +1,75 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+/* .contracting {
+  height: 100vh;
+  background: var(--deepNavy-color);
+} */
+.iamges {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  object-fit: cover;
+}
+
+.iamges img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  content: "";
+  top: 30%;
+  padding: 0 55px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+
+.subTitle {
+  color: var(--gold-color);
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+
+.title {
+  font-size: clamp(40px, 5vw, 70px);
+  font-weight: bold;
+  color: var(--white-color);
+  line-height: 1.2;
+}
+
+.desc {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--white-color);
+}
+
+.content button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  background: var(--gold-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.content button:hover {
+  background: var(--beigeGold-color);
+}

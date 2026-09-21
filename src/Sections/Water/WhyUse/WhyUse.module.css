@@ -1,0 +1,179 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.WhyUse {
+  margin-top: 50px;
+  background: #f2f1ed;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.content {
+  width: 38%;
+}
+
+/* icons and card */
+
+.card {
+  width: calc((100% - 30px) / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--gold-color);
+  border-radius: 50%;
+}
+
+.icon svg {
+  color: var(--gold-color);
+  font-size: 22px;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy-color);
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+/* content */
+
+.subTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subTitle p {
+  width: 40px;
+  height: 2px;
+  background: var(--gold-color);
+}
+
+.subTitle h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gold-color);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--deepNavy-color);
+}
+
+.desc {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+.content button {
+  background-color: var(--gold-color);
+  padding: 10px 20px;
+  color: var(--white-color);
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .card {
+    width: calc((100% - 10px) / 2);
+    gap: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .icon svg {
+    font-size: 18px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-color);
+  }
+
+  /* content */
+
+  .subTitle h2 {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  .content button {
+    background-color: var(--gold-color);
+    padding: 5px 20px;
+  }
+}

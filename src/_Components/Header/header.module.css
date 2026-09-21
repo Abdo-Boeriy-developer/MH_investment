@@ -1,0 +1,159 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 12px 0px;
+  background: #111e275b;
+  border-bottom: 1px solid #22313ba3;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  gap: 10px;
+  background-color: var(--gold-color);
+  color: var(--white-color);
+  padding: 8px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover button {
+  background-color: var(--beigeGold-color);
+}
+
+.button .menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--gold-color);
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.links ul li {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+.links ul li .active {
+  color: var(--gold-color);
+  border-bottom: 2px solid var(--gold-color);
+  padding: 8px 0;
+}
+.logo img {
+  width: 100px;
+}
+
+/* Responsive */
+
+.headerMobile {
+  position: fixed;
+  top: 0;
+  right: 1000px;
+  bottom: 0;
+  height: 100vh;
+  background: #22313b;
+  min-width: 95%;
+  margin: 0;
+  padding: 10px 25px;
+  overflow: hidden;
+  z-index: 1001;
+  transition: 0.5s;
+  display: none;
+}
+.headerMobile.actives {
+  right: 0;
+}
+.containerMobile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.logo_close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close svg {
+  font-size: 30px;
+  color: var(--gold-color);
+}
+.logoMobile img {
+  width: 80px;
+}
+.linksMobile {
+  margin-top: 20px;
+}
+.linksMobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.linksMobile ul li {
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+.linksMobile ul li .active {
+  color: var(--gold-color);
+}
+.MobileButton a {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 25px;
+  gap: 0.625rem;
+  background-color: var(--gold-color);
+  color: var(--white-color);
+}
+
+@media (max-width: 750px) {
+  .button button,
+  .links ul {
+    display: none;
+  }
+  .headerMobile {
+    display: inline;
+  }
+
+  .button .menu {
+    display: inline;
+  }
+}

@@ -1,0 +1,212 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 14, 23, 0.05) 0%,
+    rgba(3, 14, 23, 0.35) 35%,
+    rgba(3, 14, 23, 0.85) 100%
+  );
+}
+
+.hero .container {
+  position: absolute;
+  right: 7%;
+  top: 10%;
+  bottom: 0;
+  width: 40%;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.content .subtital {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #fcf2df;
+}
+.content h1 {
+  color: #fff;
+  font-size: clamp(45px, 7vw, 76px);
+  line-height: 1.1;
+  font-weight: 800;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+.content h1 span {
+  color: #e1b45d;
+}
+
+.description {
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  color: #fcf2df;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button .primaryButton {
+  padding: 10px 30px;
+  background-color: var(--gold-color);
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.arrowLeft {
+  position: absolute;
+  left: 10px;
+  transition: 0.3s;
+}
+.button .primaryButton:hover .arrowLeft {
+  left: 5px;
+}
+.button .primaryButton:hover {
+  background-color: var(--beigeGold-color);
+}
+
+/* features */
+
+.features {
+  margin-top: 30px;
+  border-top: 1px solid #233d4f;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    50deg,
+    rgba(3, 14, 23, 0.05) 12%,
+    rgba(3, 14, 23, 0.35) 50%,
+    rgba(3, 14, 23, 0.85) 50%,
+    rgba(3, 14, 23, 0.85) 40%
+  );
+  width: 100%;
+}
+
+.features .card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card .icon {
+  font-size: 35px;
+  color: var(--gold-color);
+}
+
+.card .text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.card .text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ofwhaite-color);
+}
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero .container {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    bottom: 0;
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero .container {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    bottom: 0;
+    width: 95%;
+    padding: 20px;
+  }
+
+  .features {
+    padding: 15px 0;
+  }
+
+  .features .card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card .icon {
+    font-size: 20px;
+  }
+  .card .text h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card .text p {
+    font-size: 12px;
+  }
+
+  .content {
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  .content .subtital {
+    font-size: 16px;
+
+    letter-spacing: 0.1px;
+  }
+  .content h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .button .primaryButton {
+    padding: 8px 22px;
+    font-size: 14px;
+    gap: 7px;
+  }
+}

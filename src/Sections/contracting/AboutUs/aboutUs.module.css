@@ -1,0 +1,173 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.aboutUs {
+  margin-top: 50px;
+  background-color: var(--navy-color);
+  /* height: 500px; */
+  width: 100%;
+}
+.content {
+  width: 44%;
+  margin: auto;
+}
+.images {
+  width: 48%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 15px 0;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 150px 0 0 150px;
+  height: 100%;
+}
+
+.topText {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subTitle {
+  color: var(--gold-color);
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+.subTitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--gold-color);
+  top: 50%;
+  right: 55%;
+}
+.subTitle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--gold-color);
+  top: 50%;
+  left: 55%;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ofwhaite-color);
+}
+
+/* fetoure */
+
+.fetoure {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card:last-child::after {
+  height: 0;
+}
+.card svg {
+  font-size: 35px;
+  color: var(--gold-color);
+}
+
+.card h2 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--white-color);
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .content {
+    width: 50%;
+  }
+  .images {
+    width: 47%;
+  }
+  .topText {
+    width: 100%;
+  }
+  .fetoure {
+    margin-top: 25px;
+    gap: 15px;
+  }
+
+  .cards {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .card {
+    gap: 10px;
+  }
+  .card svg {
+    font-size: 30px;
+  }
+
+  .card h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 50px;
+    width: 93%;
+    margin: auto;
+  }
+  .content,
+  .images {
+    width: 100%;
+  }
+}

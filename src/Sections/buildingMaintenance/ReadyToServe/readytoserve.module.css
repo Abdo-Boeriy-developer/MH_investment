@@ -1,0 +1,100 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+.readyToServe {
+  margin-top: 50px;
+  position: relative;
+}
+
+.overFlow {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.858);
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 11111;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topText p {
+  width: 30px;
+  height: 2px;
+  background-color: var(--gold-color);
+}
+
+.topText h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f3f3f1;
+}
+
+.content button {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gold-color);
+  color: var(--white-color);
+  width: max-content;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .content {
+    top: 50%;
+    left: 3%;
+    right: 0;
+    transform: translate(-2%, -50%);
+  }
+}

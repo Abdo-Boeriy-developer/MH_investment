@@ -1,0 +1,36 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+.projects {
+  margin-top: 50px;
+  height: 80vh;
+}
+
+.container {
+  margin-top: 50px;
+  height: 20px;
+}
+
+.container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+  .desc p {
+    text-align: center;
+  }
+  .projects {
+    height: 60vh;
+  }
+}

@@ -1,0 +1,75 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.water {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero {
+  position: relative;
+  background-color: red;
+  height: 100vh;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subTitle p {
+  width: 50px;
+  height: 2px;
+  background-color: var(--gold-color);
+}
+
+.subTitle h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.desc {
+  width: 40%;
+  font-size: 15px;
+  color: var(--dark-color);
+  line-height: 2;
+}
+
+@media (max-width: 750px) {
+  .desc {
+    width: 100%;
+  }
+}

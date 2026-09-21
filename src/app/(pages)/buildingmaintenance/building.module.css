@@ -1,0 +1,89 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.HeroBuild {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.HeroBuild img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top */
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+.top p {
+  width: 50px;
+  height: 2px;
+  background: var(--gold-color);
+}
+
+/* title */
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.title span {
+  color: var(--gold-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ofwhaite-color);
+  width: 50%;
+}
+
+.content button {
+  display: flex;
+  justify-content: flex-start;
+  width: max-content;
+  background-color: var(--gold-color);
+  color: var(--white-color);
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .desc {
+    width: 100%;
+  }
+}
