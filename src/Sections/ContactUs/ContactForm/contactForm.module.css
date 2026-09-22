@@ -1,0 +1,214 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+  --gray-color: #e2e7ed;
+  --ofGray-color: #59616a;
+}
+
+.ContactForm {
+  margin-top: 50px;
+  background-color: #f7fbfe;
+  padding: 30px 0;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.imagesContact {
+  width: 48%;
+  height: 100%;
+  position: relative;
+}
+
+.overText {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+  background-color: #023666;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.overText .title {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.overText .desc {
+  font-size: 16px;
+  margin-top: 8px;
+  color: var(--ofwhaite-color);
+}
+
+.icon svg {
+  font-size: 25px;
+  color: var(--white-color);
+}
+
+.imagesContact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.contact {
+  width: 48%;
+  height: 100%;
+
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 1px 0px 3px 2px #08121b11;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* ========Contact Heading========== */
+
+.heading h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Times New Roman";
+}
+
+.heading p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #59616a;
+}
+
+/* ========Contact form========== */
+
+.form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.form textarea {
+  height: 100%;
+}
+.form select option,
+.form select,
+.form textarea,
+.vertacal input,
+.row input {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid #e2e7ed;
+  background: #fff;
+  color: #17232d;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+select option:focus,
+.form select:focus,
+.form textarea:focus,
+.form input:focus {
+  border-color: #0b4f83;
+  box-shadow: 0 0 0 3px rgba(11, 79, 131, 0.08);
+  border: none;
+}
+
+/* ----------Button--------- */
+
+.form button {
+  width: 100%;
+  background-color: #023666;
+  padding: 7px;
+  color: var(--white-color);
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* ========Contact Sevices========== */
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.services label input {
+  appearance: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #e2e7ed;
+  border-radius: 50%;
+}
+.services label input:checked {
+  background-color: #0b4f83;
+}
+
+.services label span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 15px;
+    height: auto;
+  }
+  .imagesContact,
+  .contact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .overText {
+    padding: 7px;
+    gap: 10px;
+  }
+
+  .overText .title {
+    font-size: 17px;
+  }
+
+  .overText .desc {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .icon svg {
+    font-size: 22px;
+  }
+}

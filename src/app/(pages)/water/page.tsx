@@ -11,14 +11,32 @@ import ServicesWater from "@/Sections/Water/ServicesWater/ServicesWater";
 import WhyworkWater from "@/Sections/Water/WhyworkWater/WhyworkWater";
 import ImageToServices from "@/Sections/Water/ImageToServices/ImageToServices";
 import FooterWater from "@/Sections/Water/FooterWater/FooterWater";
-
+import { IoMdTime } from "react-icons/io";
+import Link from "next/link";
 const page = () => {
   return (
     <>
+      <div className={style.hide}>
+        <div className={style.contentHideFixed}>
+          {/* <h2 className={style.subTitleHide}>
+            قريبأ <IoMdTime />
+          </h2>
+          <h2 className={style.titleHide}>
+            <span>توريد </span>
+            مياة الشرب
+          </h2>
+          <p className={style.descHide}>الخدمة ستكون متاحة قريبأ</p>
+          <Link href={"/conactUs"}>تواصل معنا</Link> */}
+        </div>
+      </div>
+
+
+
       <div className={style.water}>
         <div className={style.container}>
           <div className={style.hero}>
             <div className={style.overFlow}></div>
+
             <picture>
               <source
                 media="(min-width: 748px)"
@@ -37,7 +55,7 @@ const page = () => {
               </ScrollReveal>
 
               <ScrollReveal direction="up" distance={25} delay={200}>
-                <h2 className={style.title}>مياة نقية .. ليحاة أفضل</h2>
+                <h2 className={style.title}>مياة نقية .. لحياة أفضل</h2>
               </ScrollReveal>
 
               <ScrollReveal direction="up" distance={20} delay={300}>

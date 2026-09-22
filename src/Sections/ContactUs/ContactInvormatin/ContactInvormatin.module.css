@@ -1,0 +1,83 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.ContactInvormatin {
+  margin-top: 50px;
+  padding: 40px 0;
+  background-color: #f2f6ff;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+}
+
+.card_All {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  width: calc((100% - 75px) / 4);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  box-shadow: 3px 1px 2px 5px #ffffff;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dark-color);
+}
+
+.icon svg {
+  color: var(--white-color);
+  font-size: 22px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--deepNavy-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--deepNavy-color);
+}
+
+@media (max-width: 950px) {
+  .card {
+    width: calc((100% - 50px) / 2);
+  }
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: calc((100% - 25px) / 1);
+  }
+}
