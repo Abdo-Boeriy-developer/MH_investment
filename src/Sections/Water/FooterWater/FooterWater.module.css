@@ -1,0 +1,100 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* logo */
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(-5%, -50%);
+  z-index: 100;
+}
+.logo img {
+  width: 70%;
+  height: 100%;
+}
+
+/* content */
+
+.content {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--ofwhaite-color);
+}
+
+.content button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  background-color: var(--gold-color);
+  border-radius: 25px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .container {
+    height: 400px;
+  }
+
+  .logo {
+    display: none;
+  }
+}

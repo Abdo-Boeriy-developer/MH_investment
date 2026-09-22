@@ -1,19 +1,37 @@
+"use client";
+
 import React from "react";
 import style from "./building.module.css";
 import Image from "next/image";
 // import images
-import heroBuild from "../../../../public/assets/heroBuild.jpeg";
+import heroBuildDisktop from "../../../../public/assets/heroBuild.jpeg";
+import BuildDisktop from "../../../../public/assets/buildDiskTop.jpeg";
+import heroBuildMobile from "../../../../public/assets/heroBuildMobile.jpeg";
 import ServicesBuild from "@/Sections/buildingMaintenance/Services/ServicesBuild";
 import WhyChooseUs from "@/Sections/buildingMaintenance/WhyChooseUs/WhyChooseUs";
 import ProjectMain from "@/Sections/buildingMaintenance/ProjectMain/ProjectMain";
 import HowWework from "@/Sections/buildingMaintenance/HowWework/HowWework";
 import ReadyToServe from "@/Sections/buildingMaintenance/ReadyToServe/readyToServe";
+import { ScrollReveal, SpringHover } from "@/components/Animations";
+
 const page = () => {
   return (
     <div className={style.building}>
       <div className={style.container}>
         <div className={style.HeroBuild}>
-          <Image src={heroBuild} alt="" />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcSet={BuildDisktop.src}
+              className={style.imgDiskTop}
+            />
+            <source
+              media="(max-width: 767px)"
+              srcSet={heroBuildMobile.src}
+              className={style.imgDiskTop}
+            />
+            <Image src="" alt="" />
+          </picture>
           <div className={style.content}>
             <div className={style.top}>
               <p></p>
@@ -30,6 +48,32 @@ const page = () => {
               المباني وجودتها واستدامتها.
             </p>
             <button>اطلب خدمة الأن +</button>
+            {/* <ScrollReveal direction="up" distance={20} delay={100}>
+              <div className={style.top}>
+                <p></p>
+                <h2>صيانة مباني</h2>
+                <p></p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" distance={25} delay={200}>
+              <h2 className={style.title}>
+                نحافظ علي مبانيك <br />
+                <span>في أفضل حال</span>
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal direction="up" distance={20} delay={300}>
+              <p className={style.desc}>
+                خدمات صيانة المباني المتكاملة تشمل أعمال الصيانة الدورية
+                والوقائية، إصلاح الأعطال، وصيانة الأنظمة والمرافق للحفاظ على
+                كفاءة المباني وجودتها واستدامتها.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal direction="up" distance={20} delay={400}>
+              <SpringHover lift={4} scale={1.04}>
+                <button>اطلب خدمة الأن +</button>
+              </SpringHover>
+            </ScrollReveal> */}
           </div>
         </div>
       </div>

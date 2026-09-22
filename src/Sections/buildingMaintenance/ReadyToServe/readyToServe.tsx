@@ -1,13 +1,17 @@
+"use client";
+
 import React from "react";
 import style from "./readytoserve.module.css";
 import Image from "next/image";
 import ready from "../../../../public/assets/foooter.jpeg";
-const readyToServe = () => {
+import { ScrollReveal, SpringHover } from "@/components/Animations";
+
+const ReadyToServe = () => {
   return (
     <div className={style.readyToServe}>
-      <div className={style.overFlow}></div>
       <div className={style.container}>
-        <div className={style.image}>
+        <ScrollReveal direction="up" distance={20} className={style.image}>
+          <div className={style.overFlow}></div>
           <Image src={ready} alt="" />
           <div className={style.content}>
             <div className={style.topText}>
@@ -19,12 +23,14 @@ const readyToServe = () => {
             <p className={style.desc}>
               تواصل معنا الأن للحصول علي استشارة مجانية او طلب خدمة صيانة
             </p>
-            <button>اطلب خدمة الأن +</button>
+            <SpringHover lift={4} scale={1.04}>
+              <button>اطلب خدمة الأن +</button>
+            </SpringHover>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   );
 };
 
-export default readyToServe;
+export default ReadyToServe;

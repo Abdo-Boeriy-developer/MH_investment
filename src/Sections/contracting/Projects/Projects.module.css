@@ -9,7 +9,9 @@
   --gray-color: #6f7345;
   --beigeGold-color: #d8c38e;
 }
-
+.project {
+  margin-bottom: 50px;
+}
 .container {
   margin-top: 50px;
   width: 93%;
@@ -19,7 +21,6 @@
 .heading {
   margin-bottom: 40px;
 }
-
 
 .Swiper {
   border-radius: 25px;

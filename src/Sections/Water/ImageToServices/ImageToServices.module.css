@@ -1,0 +1,99 @@
+:root {
+  --ofwhaite-color: #f3f3f1;
+  --white-color: #ffffff;
+  --navy-color: #111e27;
+  --deepNavy-color: #08121b;
+  --gold-color: #e1b45d;
+  --lightGold-color: #d9aa5a;
+  --dark-color: #17232d;
+  --gray-color: #6f7345;
+  --beigeGold-color: #d8c38e;
+}
+
+.ImageToServices {
+  margin-top: 50px;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.imagesSwiper {
+  width: 68%;
+}
+
+.subTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subTitle p {
+  width: 50px;
+  height: 2px;
+  background: var(--gold-color);
+}
+
+.subTitle h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--navy-color);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+/* Image Swiper */
+.imagesSwiper {
+  border-radius: 25px;
+  overflow: hidden;
+}
+.imagesSwiper .swiper {
+  width: 100%;
+  height: 250px;
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  .content,
+  .imagesSwiper {
+    width: 100%;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .imagesSwiper img {
+    object-fit: cover;
+  }
+}

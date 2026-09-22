@@ -1,33 +1,36 @@
 "use client";
+
 import React from "react";
 import style from "./Projects.module.css";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
-// Import Images
 import Image from "next/image";
 import swiper2 from "../../../../public/assets/cr2.jpeg";
 import swiper3 from "../../../../public/assets/cr3.jpeg";
 import swiper4 from "../../../../public/assets/cr4.jpeg";
-// Swiper
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import required modules
 import { Pagination, Autoplay } from "swiper/modules";
-// import React Icons
 import { FaPlus } from "react-icons/fa";
+import { ScrollReveal } from "@/components/Animations";
+
 const Projects = () => {
   return (
     <div className={style.project}>
-      <div className={style.heading}>
+      <ScrollReveal direction="up" distance={25} className={style.heading}>
         <SectionHeading
           subTitle="أعمالنا"
           title="مشاريع نفتخر بها"
           desc="مشروعات نفذناها بجودة واحترافية تعكس خبرتنا واهتمامنا بأدق التفاصيل"
         />
-      </div>
-      <div className={style.container}>
+      </ScrollReveal>
+
+      <ScrollReveal
+        direction="up"
+        distance={30}
+        delay={150}
+        className={style.container}
+      >
         <Swiper
           loop={true}
           slidesPerView={3}
@@ -78,7 +81,6 @@ const Projects = () => {
               <FaPlus />
             </div>
           </SwiperSlide>
-          {/* Loop */}
           <SwiperSlide className={style.Swiper}>
             <Image src={swiper2} alt="" />
             <div className={style.text_icon}>
@@ -101,7 +103,7 @@ const Projects = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </ScrollReveal>
     </div>
   );
 };

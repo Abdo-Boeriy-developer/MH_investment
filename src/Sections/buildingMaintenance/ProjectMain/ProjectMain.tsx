@@ -1,33 +1,32 @@
 "use client";
+
 import React from "react";
 import style from "./ProjectMain.module.css";
-// import img1 from "../../../../public/assets/cr4.jpeg";
-// import img2 from "../../../../public/assets/cr2.jpeg";
-// import img3 from "../../../../public/assets/cr2.jpeg";
 import Image from "next/image";
 import swiper2 from "../../../../public/assets/cr2.jpeg";
 import swiper3 from "../../../../public/assets/cr3.jpeg";
 import swiper4 from "../../../../public/assets/cr4.jpeg";
-// Swiper
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-// import required modules
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
-// import icons
 import { TfiTimer } from "react-icons/tfi";
 import { BsBuildings } from "react-icons/bs";
 import { LuWrench } from "react-icons/lu";
 import { GrLike } from "react-icons/gr";
+import {
+  ScrollReveal,
+  ScrollStagger,
+  AnimatedCounter,
+  SpringHover,
+} from "@/components/Animations";
+
 const ProjectMain = () => {
   return (
     <div className={style.ProjectMain}>
       <div className={style.container}>
-        <div className={style.topText}>
+        <ScrollReveal direction="up" distance={25} className={style.topText}>
           <div className={style.SubTitle}>
             <p></p>
             <h2> اعمالنا</h2>
@@ -38,13 +37,19 @@ const ProjectMain = () => {
             بعض من المشاريع اللتي نفذناها لعملأئنا في مختلف القطاعات السكنية
             والتجارية
           </p>
-        </div>
-        <div className={style.swipers}>
+        </ScrollReveal>
+
+        <ScrollReveal
+          direction="up"
+          distance={30}
+          delay={150}
+          className={style.swipers}
+        >
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
             loop={true}
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay, Pagination, FreeMode]}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -113,30 +118,41 @@ const ProjectMain = () => {
               <p>التجارية</p>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </ScrollReveal>
 
-        <div className={style.numbers}>
-          <div className={style.card}>
+        <ScrollStagger stagger={100} distance={25} className={style.numbers}>
+          <SpringHover className={style.card} lift={6}>
             <TfiTimer />
-            <h2>+1</h2>
+            <h2>
+              <AnimatedCounter value={1} prefix="+" />
+            </h2>
             <p>سنوات خبرة</p>
-          </div>
-          <div className={style.card}>
+          </SpringHover>
+
+          <SpringHover className={style.card} lift={6}>
             <BsBuildings />
-            <h2>+10</h2>
+            <h2>
+              <AnimatedCounter value={10} prefix="+" />
+            </h2>
             <p>مشروع مكتمل</p>
-          </div>
-          <div className={style.card}>
+          </SpringHover>
+
+          <SpringHover className={style.card} lift={6}>
             <LuWrench />
-            <h2>+150</h2>
+            <h2>
+              <AnimatedCounter value={150} prefix="+" />
+            </h2>
             <p>عملية صيانة</p>
-          </div>
-          <div className={style.card}>
+          </SpringHover>
+
+          <SpringHover className={style.card} lift={6}>
             <GrLike />
-            <h2>+200</h2>
+            <h2>
+              <AnimatedCounter value={200} prefix="+" />
+            </h2>
             <p>عميل سعيد</p>
-          </div>
-        </div>
+          </SpringHover>
+        </ScrollStagger>
       </div>
     </div>
   );

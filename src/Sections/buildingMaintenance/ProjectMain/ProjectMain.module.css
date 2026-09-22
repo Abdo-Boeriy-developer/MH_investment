@@ -114,7 +114,7 @@
 }
 
 .card {
-  width: calc((100% - 30px) / 4);
+  /* width: calc((100% - 30px) / 4); */
   display: flex;
   flex-direction: column;
   gap: 10px;
