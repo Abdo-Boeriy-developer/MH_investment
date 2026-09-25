@@ -160,7 +160,7 @@ select option:focus,
 .services label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
 }
 
@@ -190,6 +190,13 @@ select option:focus,
   .imagesContact,
   .contact {
     width: 100%;
+  }
+
+  .services label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
   }
 }
 
