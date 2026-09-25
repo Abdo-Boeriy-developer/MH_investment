@@ -2,7 +2,7 @@
 
 import React from "react";
 import style from "./aboutUs.module.css";
-import imgAbout from "../../../../public/assets/aboutUs.jpeg";
+import imgAbout from "../../../../public/assets/whyUseCon.jpeg";
 import Image from "next/image";
 import {
   LuClock3,
@@ -12,7 +12,11 @@ import {
   LuShieldCheck,
   LuEye,
 } from "react-icons/lu";
-import { ScrollReveal, ScrollStagger, SpringHover } from "@/components/Animations";
+import {
+  ScrollReveal,
+  ScrollStagger,
+  SpringHover,
+} from "@/components/Animations";
 
 const AboutUs = () => {
   return (

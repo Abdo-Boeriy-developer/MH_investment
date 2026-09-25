@@ -48,32 +48,6 @@ const page = () => {
               المباني وجودتها واستدامتها.
             </p>
             <button>اطلب خدمة الأن +</button>
-            {/* <ScrollReveal direction="up" distance={20} delay={100}>
-              <div className={style.top}>
-                <p></p>
-                <h2>صيانة مباني</h2>
-                <p></p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal direction="up" distance={25} delay={200}>
-              <h2 className={style.title}>
-                نحافظ علي مبانيك <br />
-                <span>في أفضل حال</span>
-              </h2>
-            </ScrollReveal>
-            <ScrollReveal direction="up" distance={20} delay={300}>
-              <p className={style.desc}>
-                خدمات صيانة المباني المتكاملة تشمل أعمال الصيانة الدورية
-                والوقائية، إصلاح الأعطال، وصيانة الأنظمة والمرافق للحفاظ على
-                كفاءة المباني وجودتها واستدامتها.
-              </p>
-            </ScrollReveal>
-            <ScrollReveal direction="up" distance={20} delay={400}>
-              <SpringHover lift={4} scale={1.04}>
-                <button>اطلب خدمة الأن +</button>
-              </SpringHover>
-            </ScrollReveal> */}
           </div>
         </div>
       </div>

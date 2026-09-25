@@ -2,13 +2,17 @@
 
 import React from "react";
 import style from "./WhyUse.module.css";
-import image from "../../../public/assets/swiper.jpeg";
+import image from "../../../public/assets/swiperHome2.jpeg";
 import Image from "next/image";
 import { MdOutlineSecurity } from "react-icons/md";
 import { SlEarphonesAlt } from "react-icons/sl";
 import { IoIosTimer } from "react-icons/io";
 import { PiUsersFourLight } from "react-icons/pi";
-import { ScrollReveal, ScrollStagger, SpringHover } from "@/components/Animations";
+import {
+  ScrollReveal,
+  ScrollStagger,
+  SpringHover,
+} from "@/components/Animations";
 
 const WhyUse = () => {
   return (
@@ -20,7 +24,8 @@ const WhyUse = () => {
               <p className={style.subTitle}>لماذا نحن</p>
               <h2 className={style.title}>نختار الجودة لنصنع الفرق</h2>
               <p className={style.desc}>
-                نحن نؤمن ان كل مشروع هو مسؤلية لذلك نحرص علي تقديم خدماتنا <br />
+                نحن نؤمن ان كل مشروع هو مسؤلية لذلك نحرص علي تقديم خدماتنا{" "}
+                <br />
                 بأعلي جودة مع الالتزام بالمواعيد وتوفير افضل الحلول لعملائنا
               </p>
             </div>

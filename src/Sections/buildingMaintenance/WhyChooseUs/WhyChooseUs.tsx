@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectCreative } from "swiper/modules";
+import { EffectCreative, Autoplay } from "swiper/modules";
 import electriacl from "../../../../public/assets/electrical.jpeg";
 import plumbing from "../../../../public/assets/plumbing.jpeg";
 import airConditioning from "../../../../public/assets/Air.jpeg";
@@ -34,7 +34,12 @@ const WhyChooseUs = () => {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal direction="left" distance={35} delay={150} className={style.images}>
+        <ScrollReveal
+          direction="left"
+          distance={35}
+          delay={150}
+          className={style.images}
+        >
           <Swiper
             grabCursor={true}
             effect={"creative"}
@@ -47,7 +52,12 @@ const WhyChooseUs = () => {
                 translate: ["100%", 0, 0],
               },
             }}
-            modules={[EffectCreative]}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            modules={[EffectCreative, Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide className={style.swiper}>

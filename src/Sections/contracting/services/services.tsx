@@ -4,11 +4,11 @@ import React from "react";
 import style from "./services.module.css";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import Image from "next/image";
-import img1 from "../../../../public/assets/cr1.jpeg";
-import img2 from "../../../../public/assets/cr2.jpeg";
-import img3 from "../../../../public/assets/cr7.jpeg";
-import img4 from "../../../../public/assets/cr5.jpeg";
-import img5 from "../../../../public/assets/c8.jpeg";
+import img1 from "../../../../public/assets/servicesCon3.jpeg";
+import img2 from "../../../../public/assets/swiperProject2.jpeg";
+import img3 from "../../../../public/assets/servicesCon2.jpeg";
+import img4 from "../../../../public/assets/servicesCon4.jpeg";
+import img5 from "../../../../public/assets/servicesCon1.jpeg";
 import {
   FaBuilding,
   FaPersonDigging,

@@ -90,12 +90,25 @@
 }
 
 /* swipperImages */
+.swipperImages {
+  overflow: hidden;
+  border-radius: 25px;
+}
 
-.swipperImages img {
+.swipperImages .swiperSlide {
   width: 100%;
+  height: 400px;
+  overflow: hidden;
   border-radius: 25px;
   margin: auto;
-  object-fit: contain;
+}
+
+.swiperSlide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  margin: auto;
 }
 
 /* Responsive */

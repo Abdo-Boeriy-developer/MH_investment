@@ -8,13 +8,17 @@ import { IoWaterOutline } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-import swiperImage from "../../../public/assets/swiper.jpeg";
-import swiperImage2 from "../../../public/assets/swiper2.jpeg";
-import swiperImage3 from "../../../public/assets/swiper3.jpeg";
+import { Navigation, Autoplay } from "swiper/modules";
+import swiperImage from "../../../public/assets/swiperHome.jpeg";
+import swiperImage2 from "../../../public/assets/swiperHome2.jpeg";
+import swiperImage3 from "../../../public/assets/swiperHome3.jpeg";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
-import { ScrollReveal, ScrollStagger, SpringHover } from "@/components/Animations";
+import {
+  ScrollReveal,
+  ScrollStagger,
+  SpringHover,
+} from "@/components/Animations";
 
 const OurSolutions = () => {
   return (
@@ -81,19 +85,32 @@ const OurSolutions = () => {
           </SpringHover>
         </ScrollStagger>
 
-        <ScrollReveal direction="up" distance={30} delay={200} className={style.swipperImages}>
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide>
+        <ScrollReveal
+          direction="up"
+          distance={30}
+          className={style.swipperImages}
+        >
+          <Swiper
+            navigation={true}
+            modules={[Navigation, Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide className={style.swiperSlide}>
               <Image src={swiperImage} alt="swiperImage" />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={style.swiperSlide}>
               <Image src={swiperImage2} alt="swiperImage" />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={style.swiperSlide}>
               <Image src={swiperImage3} alt="swiperImage" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={swiperImage} alt="swiperImage" />
+            <SwiperSlide className={style.swiperSlide}>
+              <Image src={swiperImage2} alt="swiperImage" />
             </SwiperSlide>
           </Swiper>
         </ScrollReveal>

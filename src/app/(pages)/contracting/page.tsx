@@ -4,7 +4,9 @@ import React from "react";
 import style from "./contracting.module.css";
 import Image from "next/image";
 // import images
-import img from "../../../../public/assets/conHero.jpeg";
+import imgDiskTop from "../../../../public/assets/conHero2.jpeg";
+// import HeroConMobile from "../../../../public/assets/HeroConMobile.jpeg";
+import HeroConMobile from "../../../../public/assets/heroConMobile2.jpeg";
 import Services from "@/Sections/contracting/services/services";
 import AboutUs from "@/Sections/contracting/AboutUs/AboutUs";
 import Projects from "@/Sections/contracting/Projects/Projects";
@@ -17,8 +19,11 @@ const page = () => {
       <div className={style.contracting}>
         <div className={style.container}>
           <div className={style.iamges}>
-            {/* <Image src={img} alt="IMagess" /> */}
-            <Image src={img} alt="IMagess" priority />
+            <picture>
+              <source media="(min-width:748px)" srcSet={imgDiskTop.src} />
+              <source media="(max-width:768px)" srcSet={HeroConMobile.src} />
+              <Image src={""} alt="IMagess" />
+            </picture>
             <div className={style.overFlow}></div>
             <div className={style.content}>
               <ScrollReveal direction="up" distance={20} delay={100}>

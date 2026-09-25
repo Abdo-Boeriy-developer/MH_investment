@@ -3,7 +3,7 @@
 import React from "react";
 import style from "./OurServices.module.css";
 import Image from "next/image";
-import image from "../../../public/assets/ourServices-removebg-preview (1).png";
+import image from "../../../public/assets/ourServicesHome.jpeg";
 import {
   AiOutlineCheck,
   AiOutlineHeatMap,
